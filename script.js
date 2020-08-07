@@ -1,6 +1,6 @@
 function calcular() {
   var dist = parseFloat(document.querySelector("#dist").value);
-  if (dist <= 0 || dist == NaN) return alert("distância invalida");
+  if (!dist) return alert("distância invalida");
 
   var val = 0.52 * dist;
   val = Math.round(val);
